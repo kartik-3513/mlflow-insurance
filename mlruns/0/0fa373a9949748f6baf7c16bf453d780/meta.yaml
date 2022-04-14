@@ -1,0 +1,15 @@
+artifact_uri: file:///home/abhishek/NSUT/CHS/linear_reg_pipeline/mlruns/0/0fa373a9949748f6baf7c16bf453d780/artifacts
+end_time: 1649943299399
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 0fa373a9949748f6baf7c16bf453d780
+run_uuid: 0fa373a9949748f6baf7c16bf453d780
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1649943295008
+status: 3
+tags: []
+user_id: abhishek
