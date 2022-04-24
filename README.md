@@ -24,3 +24,6 @@ To run an expriment of the project from a particular entry point execute `mlflow
 MlFlow models provided a serialized binary version of ML models from various libraries. These models are highly reliable (consistent in their results) accross deployment platforms because they are run in the specified conda environment.
 
 To deploy a model to localhost run `mlflow models serve --model-uri runs:/f97b6a22eef24fb291f37c72b80057e8/model -p 3000`. f97b6a22eef24fb291f37c72b80057e8 is the runid of the model we chose to deploy.
+
+After deploying, send a curl request using: 
+curl -X POST -H "Content-Type:application/json; format=pandas-split" --data '{"columns":["age","bmi","children","sex_female","sex_male","smoker_no","smoker_yes","region_northeast","region_northwest","region_southeast","region_southwest"],"data":[[20, 23.3, 2, 0, 1, 0, 1, 1, 0, 0, 0]]}' http://127.0.0.1:3000/invocations
